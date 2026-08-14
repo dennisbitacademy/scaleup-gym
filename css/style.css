@@ -346,8 +346,10 @@ p.lead + p { margin-top: 1.1rem; }
 .overtuiging__tekst p { max-width: 42ch; }
 .overtuiging__tekst .lead { color: var(--inkt); }
 .overtuiging__beeld img {
-  width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius-groot);
+  width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 8%;
+  border-radius: var(--radius-groot);
 }
+@media (min-width: 900px) { .overtuiging__beeld img { aspect-ratio: 3 / 4; } }
 .overtuiging__beeld figcaption {
   margin-top: 0.85rem; font-size: var(--t-meta); color: var(--tekst-meta); letter-spacing: 0.01em;
 }
