@@ -1,0 +1,88 @@
+/* ==========================================================================
+   Design tokens — ScaleUp Gym / Koen van der Meer
+   Eén bron van waarheid: kleuren, typografie (Inter), spacing, schaal.
+   Editorial-first: hiërarchie uit typografie, ruimte, schaal en contrast.
+   ========================================================================== */
+
+:root {
+  /* --- Merkkleuren (bron van waarheid) --- */
+  --kleur-geel: #ffde59;
+  --kleur-zwart: #000000;
+  --kleur-oranje: #ff9c65;
+  --kleur-turquoise: #5ce1e6;
+
+  /* --- Papier & inkt (editorial neutralen) --- */
+  --papier: #fbfaf6;          /* warme off-white achtergrond */
+  --papier-diep: #f3f1ea;     /* iets dieper vlak voor afwisseling */
+  --inkt: #14110f;            /* bijna-zwart, zachter dan puur #000 voor lange tekst */
+  --inkt-zacht: #5c554e;      /* metadata / secundaire tekst */
+  --inkt-flauw: #9a938a;      /* labels, subtiele hints */
+  --lijn: #e5e1d8;            /* haarlijnen */
+  --wit: #ffffff;
+
+  /* --- Rollen --- */
+  --bg: var(--papier);
+  --tekst: var(--inkt);
+  --tekst-zacht: var(--inkt-zacht);
+  --tekst-meta: var(--inkt-flauw);
+  --accent: var(--kleur-oranje);
+  --accent-koel: var(--kleur-turquoise);
+  --highlight: var(--kleur-geel);
+
+  /* --- Typografie --- */
+  --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --gw-normaal: 400;
+  --gw-medium: 500;
+  --gw-semi: 600;
+  --gw-bold: 700;
+  --gw-extra: 800;
+  --gw-black: 900;
+
+  /* Responsieve type-schaal (clamp: min, voorkeur, max) */
+  --t-display:  clamp(2.75rem, 1.2rem + 7.2vw, 8rem);   /* hero / finale statements */
+  --t-mega:     clamp(2.4rem, 1.3rem + 5.2vw, 5.5rem);  /* grote sectie-statements */
+  --t-h1:       clamp(2rem, 1.3rem + 3.2vw, 3.75rem);
+  --t-h2:       clamp(1.6rem, 1.15rem + 2vw, 2.75rem);
+  --t-h3:       clamp(1.25rem, 1.05rem + 0.9vw, 1.6rem);
+  --t-lead:     clamp(1.15rem, 1.02rem + 0.6vw, 1.5rem);  /* introparagrafen */
+  --t-body:     clamp(1rem, 0.97rem + 0.15vw, 1.125rem);
+  --t-klein:    0.95rem;
+  --t-label:    0.78rem;   /* eyebrow labels, uppercase */
+  --t-meta:     0.8rem;
+
+  --lh-strak: 0.98;
+  --lh-kop: 1.05;
+  --lh-body: 1.62;
+
+  --ls-display: -0.03em;
+  --ls-kop: -0.02em;
+  --ls-label: 0.14em;
+
+  /* --- Spacing-schaal --- */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+  --s-10: 8rem;
+  --s-11: 10rem;
+  /* Verticale ruimte tussen conceptueel verschillende secties */
+  --sectie-y: clamp(4.5rem, 3rem + 7vw, 11rem);
+
+  /* --- Layout --- */
+  --breed: 1240px;     /* brede container */
+  --normaal: 1080px;   /* standaard container */
+  --lees: 720px;       /* smalle leeskolom */
+  --rand: clamp(1.25rem, 5vw, 4rem);  /* horizontale marge */
+
+  /* --- Vorm & beweging --- */
+  --radius: 4px;
+  --radius-groot: 10px;
+  --overgang: 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  --overgang-snel: 0.2s ease;
+}
